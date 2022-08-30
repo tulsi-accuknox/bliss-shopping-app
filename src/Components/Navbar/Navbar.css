@@ -1,0 +1,138 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.nav-bar{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+   background-color: rgb(219, 215, 215);
+    color: whitesmoke;
+    position: relative;
+    
+}
+
+.nav-bar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-bar h2{
+    font-size: 1.8rem;
+    color: rgb(101, 99, 99);
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.nav-list ul  a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   color: rgb(46, 44, 44);
+   font-weight: 600;
+   text-decoration: none;
+} 
+
+.nav-list ul  a:hover{
+     border-bottom: 2px solid #f00758;
+     cursor: pointer;
+     color: #f00758;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.nav-list ul .active{
+    border-bottom: 2px solid #f00758;
+    cursor: pointer;
+    color: #f00758;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:1200px) {
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2rem;
+        color: rgb(46, 44, 44);
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: rgba(46, 44, 44, 0.8);
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        top: 75px;
+        left: -1200px;
+        transition: all 0.3s ease;
+        gap: 0.5rem;
+        /* z-index: 2; */
+    }
+ 
+    .nav-list ul a{
+        color: white;
+    }
+
+    .active-list{
+        left: 0;
+    }
+
+
+    
+}
+
+@media screen and (max-width:481px) {
+    .nav-bar{
+        justify-content: space-between;
+        align-items: center;
+        /* width: 100%; */
+        padding: 1rem;
+    }
+
+    .nav-bar h1{
+        font-size: 1rem;
+    }
+
+    .hamburger-menu{
+        display: block;
+        font-size: 1.5rem;
+        color: rgba(46, 44, 44, 0.7);
+    }
+
+    ul{
+        position: absolute;
+        background-color: rgba(46, 44, 44, 0.8);
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        right: 0;
+        top: 105px;
+        left: -1200px;
+        transition: all 0.3s ease;
+        gap: 0.5rem;
+    }
+
+    .nav-list ul a{
+        color: white;
+    }
+   
+}

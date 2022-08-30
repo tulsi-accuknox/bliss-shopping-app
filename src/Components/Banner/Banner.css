@@ -1,0 +1,37 @@
+.banner{
+    background-image: url(/images/cover/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 0.5rem;
+}
+
+.banner_head{
+    font-size: 4.8rem;
+    color: white;
+    margin-left: 20rem;
+}
+
+.banner_para{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 20rem;
+}
+
+.banner_btn{
+    margin-left: 10rem;
+   width: 3.8%;
+   height: 7.5vh;
+   border-radius: 50%;
+   border:none;
+   outline: none;
+   font-size: 4rem;
+   color: #95A6FE;
+   cursor: pointer;
+}
