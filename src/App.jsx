@@ -15,6 +15,7 @@ import Sunglasses from "./Components/Sunglasses/Sunglasses";
 import Watches from "./Components/Watches/Watches";
 import Contact from "./Components/Contact/Contact";
 import NoMatch from "./Components/NoMatch/NoMatch";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <Route path="jewellery" element={<Jewellery />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NoMatch />} />
-
+        <Route path="cart" element={<Cart />} />
       </Routes>
       <Signup/>
       <Footer/>

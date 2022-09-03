@@ -89,12 +89,18 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .bx-cart-add{
     
     
     font-size: 1.5rem;
+    color: #256D85;
+}
+
+.bx-x{
+    font-size: 1.8rem;
     color: #256D85;
 }
 
@@ -105,4 +111,10 @@ span{
     align-items: center;
     flex-wrap: wrap;
     gap: 5rem;
+}
+
+@media screen and (max-width:1400px) {
+    .card_pro{
+        justify-content: center;
+    }
 }

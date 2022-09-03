@@ -10,10 +10,13 @@ html,body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-   background-color: rgb(219, 215, 215);
-    color: whitesmoke;
+    font-weight: 700;
+   /* background-color: rgb(248, 242, 242); */
+    border: 1px solid rgb(200, 196, 196);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); 
+    color: rgb(97, 97, 97);
     position: relative;
+
     
 }
 
@@ -30,15 +33,16 @@ html,body{
 }
 
 .cart_btn img{
-     width: 2.8rem;
+     width: 3rem;
      cursor: pointer;
+    
 }
 
 .nav-list ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 
 }
 
@@ -69,8 +73,14 @@ html,body{
     font-size: 1.3rem;
 }
 
-@media screen and (max-width:1200px) {
+.active-list{
+    left: 0;
+}
 
+@media screen and (max-width:1200px) {
+   
+   
+    
     .hamburger-menu {
         display: block;
         font-size: 2rem;
@@ -90,28 +100,20 @@ html,body{
         left: -1200px;
         transition: all 0.3s ease;
         gap: 0.5rem;
+        color: white;
         /* z-index: 2; */
     }
  
-    .nav-list ul a{
-        color: white;
-    }
-
-    .active-list{
-        left: 0;
+    ul img{
+        
+        filter: invert(1);
     }
 
 
-    
 }
 
 @media screen and (max-width:481px) {
-    .nav-bar{
-        justify-content: space-between;
-        align-items: center;
-        /* width: 100%; */
-        padding: 1rem;
-    }
+    
 
     .nav-bar h1{
         font-size: 1rem;
@@ -134,10 +136,12 @@ html,body{
         left: -1200px;
         transition: all 0.3s ease;
         gap: 0.5rem;
+        
     }
 
-    .nav-list ul a{
-        color: white;
+    ul img{
+        
+        filter: invert(1);
     }
    
 }

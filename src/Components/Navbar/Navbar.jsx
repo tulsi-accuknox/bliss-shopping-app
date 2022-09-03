@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import {NavLink} from 'react-router-dom'
+import { cartContext } from '../Context/CartContext';
 
 import "./Navbar.css"
 
 function Navbar() {
   const [isActive,setIsActive] = useState(false);
+
+  const {cart} = useContext(cartContext);
 
   return (
     <div>
@@ -33,7 +36,7 @@ function Navbar() {
 
             
             <div className="cart_btn">
-              <img src="/images/favicon/shopping-cart.png" alt="" />
+              <NavLink to='/cart'><img src="/images/favicon/shopping-cart.png" alt="" />{cart.length}</NavLink>
             </div>
         </div>
     </div>

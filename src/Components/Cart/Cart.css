@@ -1,0 +1,48 @@
+.cart_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cart_head{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.bxs-shopping-bag{
+    color: rgb(243, 171, 17);
+    font-size: 4.5rem;
+}
+
+.cart_total_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 15%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.cart_total{
+    color: rgb(243, 171, 17);
+    font-size: 4rem;
+    background-color: transparent;
+}
+
+.cart_card_container{
+    /* height: 100vh; */
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 2rem auto;
+}
+
+
